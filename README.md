@@ -16,38 +16,6 @@ A Chinese 8-ball billiards game with real-time cue-ball trajectory prediction. B
 - **Match mode**: local hotseat (2 players) and local vs AI with selectable style (attack / balanced / safety).
 - **Event feed**: timestamped log of pots, fouls, ball-in-hand, and game results.
 
-## Tech stack
-
-| Layer     | Technology                          |
-| --------- | ----------------------------------- |
-| Frontend  | React 19, TypeScript, Vite 8        |
-| Rendering | HTML Canvas                         |
-| Testing   | Vitest                              |
-| Deploy    | Docker (multi-stage) + Nginx        |
-
-## Project structure
-
-```
-PreShot/
-├── web/
-│   ├── src/
-│   │   ├── App.tsx                  # Main app component and game UI
-│   │   ├── game/
-│   │   │   ├── state.ts             # Ball state, snapshots, clamp utilities
-│   │   │   ├── rules.ts             # Match rules, foul detection, turn resolution
-│   │   │   └── layoutStorage.ts     # Save/load practice layouts to localStorage
-│   │   ├── physics/
-│   │   │   ├── engine.ts            # Core physics: friction, collision, cushion reflection
-│   │   │   ├── preview.ts           # Ghost-ball aiming and trajectory preview
-│   │   │   └── simulateShot.ts      # Full shot simulation (frame-by-frame animation)
-│   │   └── ui/
-│   │       └── tableToastLifecycle.ts
-│   ├── Dockerfile                   # Multi-stage build (Node → Nginx)
-│   ├── nginx.conf                   # SPA routing config
-│   └── package.json
-└── README.md
-```
-
 ## Getting started
 
 ```bash
