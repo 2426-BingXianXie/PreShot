@@ -5,7 +5,7 @@ import {
   mapSpinFromOffset,
   reflectFromCushion,
   type Vec2,
-} from "./engine";
+} from "../../src/physics/engine";
 
 const almostEqual = (a: number, b: number, tolerance = 1e-6) => {
   expect(Math.abs(a - b)).toBeLessThanOrEqual(tolerance);

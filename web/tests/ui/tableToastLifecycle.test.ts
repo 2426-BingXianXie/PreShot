@@ -4,7 +4,7 @@ import {
   TABLE_TOAST_TOTAL_MS,
   TABLE_TOAST_VISIBLE_MS,
   transitionToastPhase,
-} from "./tableToastLifecycle";
+} from "../../src/ui/tableToastLifecycle";
 
 describe("table toast lifecycle", () => {
   test("splits total lifetime into visible and fade durations", () => {

@@ -1,10 +1,10 @@
 import { describe, expect, test } from "vitest";
-import type { Ball } from "./state";
+import type { Ball } from "../../src/game/state";
 import {
   clearSavedPracticeLayout,
   loadSavedPracticeLayout,
   savePracticeLayout,
-} from "./layoutStorage";
+} from "../../src/game/layoutStorage";
 
 const createMemoryStorage = () => {
   const store = new Map<string, string>();

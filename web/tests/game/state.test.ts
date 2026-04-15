@@ -4,7 +4,7 @@ import {
   clampBallPositionNoOverlap,
   pushSnapshot,
   restoreLastSnapshot,
-} from "./state";
+} from "../../src/game/state";
 
 describe("practice redo snapshots", () => {
   test("restores exact pre-shot layout", () => {

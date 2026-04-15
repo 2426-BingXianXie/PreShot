@@ -1,6 +1,6 @@
 import { describe, expect, test } from "vitest";
-import { simulateShot } from "./simulateShot";
-import type { Ball } from "../game/state";
+import { simulateShot } from "../../src/physics/simulateShot";
+import type { Ball } from "../../src/game/state";
 
 const baseTable = {
   width: 980,

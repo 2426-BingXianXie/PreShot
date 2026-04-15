@@ -1,11 +1,11 @@
 import { describe, expect, test } from "vitest";
-import { createInitialBalls } from "./state";
+import { createInitialBalls } from "../../src/game/state";
 import {
   createInitialMatchState,
   resolveMatchTurn,
   legalTargetKindsForPlayer,
   type MatchState,
-} from "./rules";
+} from "../../src/game/rules";
 
 const withGroups = (groups: { 1: "solid" | "stripe"; 2: "solid" | "stripe" }): MatchState => ({
   ...createInitialMatchState(),

@@ -1,5 +1,5 @@
 import { describe, expect, test } from "vitest";
-import { computePreviewPath, computeGhostBall } from "./preview";
+import { computePreviewPath, computeGhostBall } from "../../src/physics/preview";
 
 const TABLE = { width: 1000, height: 500, cushionInset: 24, ballRadius: 12 };
 
