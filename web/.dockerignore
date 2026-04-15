@@ -1,0 +1,44 @@
+# Dependencies (reinstalled during build)
+node_modules
+
+# Build output (rebuilt during build)
+dist
+
+# Version control
+.git
+.gitignore
+
+# Environment files
+.env
+.env.*
+*.local
+
+# Test & coverage
+coverage
+**/*.test.ts
+**/*.test.tsx
+**/*.spec.ts
+**/*.spec.tsx
+
+# IDE & OS
+.idea
+.vscode
+.DS_Store
+
+# Documentation
+README.md
+*.md
+
+# Docker (avoid recursive copy)
+Dockerfile
+.dockerignore
+
+# TypeScript build cache
+*.tsbuildinfo
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
